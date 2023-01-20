@@ -10,7 +10,8 @@ file_path = os.getcwd()
 path = os.getcwd()+"\duplicate"
 list_of_files = os.walk(file_path)
 unique_files = dict()
-os.makedirs(path)
+if not os.path.exists(path):
+	os.makedirs(path)
 for root, folders,files in list_of_files:
 	for file in files:
 		file_path = Path(os.path.join(root, file))
