@@ -1,6 +1,4 @@
-###
-move duplicate images to duplicate folder
-###
+###move duplicate images to duplicate folder###
 from tkinter.filedialog import askdirectory
 from tkinter import Tk
 import os
